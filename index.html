@@ -1,0 +1,272 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #240d64;
+        padding: 10px 20px;
+      }
+    nav ul{
+        display: flex;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    nav span{color: #fff;}
+
+    nav  a{
+        color: #fff;
+        text-decoration: none;
+    margin-left: 20px;
+    }
+    /* Header umumiy g'ilofi */
+nav a hover {
+  color: #e95815;
+}
+header {
+   
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  text-align: center;
+background:
+    linear-gradient(rgba(29, 8, 8, 0.55), rgba(0,0,0,.55)),
+      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-T_l9pN3vjDP4dypwvC43dEqiaXdap7gqIvjsCAEOlw&s=10') 
+      center/cover no-repeat;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+ min-height: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #cee40f;
+  color: #222;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+/* Asosiy fonni qora qilish (forma orqasidagi kabi) */
+main {
+  background-color: #1e0a8f;
+  padding: 40px 0;
+}
+
+/* About Me konteyneri */
+.container2 {
+  max-width: 550px;           /* Kenglikni forma o'lchamiga keltiramiz */
+  min-height: auto;           /* Balandlik matnga qarab o'zi moslashadi */
+  background-color: #240d64;  /* Formaning to'q-kulrang foni */
+  border-radius: 14px;        /* Burchaklarni yumaloq qilish */
+  margin: 0 auto 40px auto;   /* O'rtaga tekislash va proyektlar blokidan masofa */
+  padding: 40px 30px;         /* Ichki bo'shliqlar (otstup) */
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Sarlavha (About Me) stili */
+.container2 h2 {
+  color: #ffffff;             /* Oq matn */
+  text-align: center;         /* Xuddi formadagi kabi o'rtada */
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Matn stili */
+.container2 p {
+  color: #cccccc;             /* Och kulrang, o'qishga qulay matn */
+  font-size: 16px;
+  line-height: 1.6;           /* Qatorlar orasi ochiladi */
+  margin: 0;
+}/* Loyihalar bo'limining umumiy konteyneri */
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #1e0a8f; /* Asosiy fon qora */
+  
+  /* Ichidagi hamma kartochkalarni yonma-yon qilish */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* "Loyihalar" sarlavhasi butun qatorni egallashi uchun */
+.container3 h2 {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container3 .card {
+  background-color: #1e0a8f;
+  border: 1px solid #240d64; 
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.container3 .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; 
+}
+
+/* Matnlar qismi */
+.container3 .card-title {
+  color: #ffffff;
+}
+
+.container3 .card-text {
+  color: #cccccc;
+}
+
+
+.container3 .btn-primary {
+  background-color: #d4e815;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.container3 .btn-primary:hover {
+  background-color: #bdcf10;
+  color: #000000;
+}
+
+.site-footer {
+background-color: #240d64;
+color: #ffffff;
+padding: 20px 0;
+border-top: 1px solid #1e0a8f;
+font-family: arial, sans-serif;
+margin-top: 40px;}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ footer content p {
+  margin: 0;    
+  color: #ffffff;
+  font-size: 14px;}
+  footer links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  footer links a:hover {
+    color: #d4e815;
+  }
+</style>
+</head>
+<body>
+<nav>
+    <span>Mening portfoliom</span>
+    <ul>
+        <!-- Asosiy tugmasi sahifaning eng tepasiga olib chiqadi -->
+        <li><a href="#">Asosiy</a></li>
+        
+        <!-- Bu tugma "haqimda" degan joyga olib tushadi -->
+        <li><a href="#haqimda">Mening haqimda</a></li>
+        
+        <!-- Bu tugma "loyihalar" degan joyga olib tushadi -->
+        <li><a href="#loyihalar">Loyihalar</a></li>
+    </ul>
+</nav>
+
+<header>
+ <div class="container">
+  <div class="header-content">
+    <h1>Mening portfoliomga xush kelibsiz</h1>
+    <p>Bu mening dasturlash portfoliom. Bu yerda mening ishlarim haqida ma'lumotlar bor .</p>
+    
+    <!-- Markazdagi sariq tugma ham "loyihalar" bo'limiga olib tushadi -->
+    <a href="#loyihalar" class="btn">Loyihalarni ko'rish</a>
+  </div>
+</div>
+</header>
+
+<main>
+    <section>
+       <div class="container2" id="haqimda">
+
+            <h2>Mening haqimda</h2>
+            <p>Men Turg'unboyev Islombekman.Men 7-sinfman. Men dasturlash bo'yicha IT studentman.Men dasturlashni Junior It da organmoqdaman. Men matematik bilimim hamda interaktiv dasturlash ko'nikmalarim bor.</p>
+        </div>
+    </section>
+    </main>
+    <div class="container3" id="loyihalar">
+
+        <h2>Loyihalar</h2>
+        
+        <div class="card" style="width: 18rem;">
+  <img src="automoshinalar.jpg" class="card-img-top" alt="Loyiha rasmi">
+ <div class="card-body">
+    <h5 class="card-title">Moshina sayt</h5>
+    <p class="card-text">Bu moshina sayti. Bu saytda men ozbek moshinalari haqida aytganman.Yani bu saytda men ozbek moshinalari haqida ma'lumotlar berilgan.
+    </p>
+    <a href="https://islombek-create.github.io/uzbek-cars-site/" class="btn btn-primary">Ko'rish</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="kitob sayt.jpg" class="card-img-top" alt="Loyiha rasmi">
+<div class="card-body">
+    <h5 class="card-title">Kitob sayt</h5>
+    <p class="card-text">Bu kitob sayti. Bu saytda men sizni fikrlashingizni ozgartiradigan kitoblar bor.
+    </p>
+    <a href="https://snazzy-cassata-fda28b.netlify.app" class="btn btn-primary">Ko'rish</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="kino sayt.jpg" class="card-img-top" alt="Loyiha rasmi">
+<div class="card-body">
+    <h5 class="card-title">Kino sayt</h5>
+    <p class="card-text">Bu kino sayti. Bu saytda men kinolar haqida aytganman.bu saytda siz ajoyib kino va seriallarni uzbek tilida tomosha qilishingiz mumkin.
+    </p>
+    <a href="https://dynamic-mooncake-28e15e.netlify.app/" class="btn btn-primary">Ko'rish</a>
+  </div>
+</div>
+      </div>
+      <footer class="site-footer">
+        <div class="container">
+          <p>&copy; 2026 Mening portfoliom. Barcha huquqlar himoyalangan.</p>
+        <div clas="footer-links">
+          <a href="#">telegram</a> |
+          <a href="#">telegram</a> |
+          <a href="#">github</a>
+        </div>
+      </footer>"
+</body>
+</html>
